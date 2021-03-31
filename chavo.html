@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Школа дронов</title>
+	<link href="./files/app.e998dcd4.css" rel="preload" as="style">
+	<link href="./files/chunk-vendors.7d816680.css" rel="preload" as="style">
+	<link href="./files/chunk-vendors.7d816680.css" rel="stylesheet">
+	<link href="./files/app.e998dcd4.css" rel="stylesheet">
+	<style type="text/css" id="vuetify-theme-stylesheet">
+		.v-application a {
+		color: #ffffff;
+	}
+	
+	.v-application .primary {
+		background-color: #ffffff !important;
+		border-color: #ffffff !important;
+	}
+	
+	.v-application .primary--text {
+		color: #ffffff !important;
+		caret-color: #ffffff !important;
+	}
+	
+	.v-application .primary.lighten-5 {
+		background-color: #c7fdff !important;
+		border-color: #c7fdff !important;
+	}
+	
+	.v-application .primary--text.text--lighten-5 {
+		color: #c7fdff !important;
+		caret-color: #c7fdff !important;
+	}
+	
+	.v-application .primary.lighten-4 {
+		background-color: #a8e0ff !important;
+		border-color: #a8e0ff !important;
+	}
+	
+	.v-application .primary--text.text--lighten-4 {
+		color: #a8e0ff !important;
+		caret-color: #a8e0ff !important;
+	}
+	
+	.v-application .primary.lighten-3 {
+		background-color: #8ac5ff !important;
+		border-color: #8ac5ff !important;
+	}
+	
+	.v-application .primary--text.text--lighten-3 {
+		color: #8ac5ff !important;
+		caret-color: #8ac5ff !important;
+	}
+	
+	.v-application .primary.lighten-2 {
+		background-color: #6aaaff !important;
+		border-color: #6aaaff !important;
+	}
+	
+	.v-application .primary--text.text--lighten-2 {
+		color: #6aaaff !important;
+		caret-color: #6aaaff !important;
+	}
+	
+	.v-application .primary.lighten-1 {
+		background-color: #488fef !important;
+		border-color: #488fef !important;
+	}
+	
+	.v-application .primary--text.text--lighten-1 {
+		color: #488fef !important;
+		caret-color: #488fef !important;
+	}
+	
+	.v-application .primary.darken-1 {
+		background-color: #005eb6 !important;
+		border-color: #005eb6 !important;
+	}
+	
+	.v-application .primary--text.text--darken-1 {
+		color: #005eb6 !important;
+		caret-color: #005eb6 !important;
+	}
+	
+	.v-application .primary.darken-2 {
+		background-color: #00479b !important;
+		border-color: #00479b !important;
+	}
+	
+	.v-application .primary--text.text--darken-2 {
+		color: #00479b !important;
+		caret-color: #00479b !important;
+	}
+	
+	.v-application .primary.darken-3 {
+		background-color: #003180 !important;
+		border-color: #003180 !important;
+	}
+	
+	.v-application .primary--text.text--darken-3 {
+		color: #003180 !important;
+		caret-color: #003180 !important;
+	}
+	
+	.v-application .primary.darken-4 {
+		background-color: #001e67 !important;
+		border-color: #001e67 !important;
+	}
+	
+	.v-application .primary--text.text--darken-4 {
+		color: #001e67 !important;
+		caret-color: #001e67 !important;
+	}
+	
+	.v-application .secondary {
+		background-color: #424242 !important;
+		border-color: #424242 !important;
+	}
+	
+	.v-application .secondary--text {
+		color: #424242 !important;
+		caret-color: #424242 !important;
+	}
+	
+	.v-application .secondary.lighten-5 {
+		background-color: #c1c1c1 !important;
+		border-color: #c1c1c1 !important;
+	}
+	
+	.v-application .secondary--text.text--lighten-5 {
+		color: #c1c1c1 !important;
+		caret-color: #c1c1c1 !important;
+	}
+	
+	.v-application .secondary.lighten-4 {
+		background-color: #a6a6a6 !important;
+		border-color: #a6a6a6 !important;
+	}
+	
+	.v-application .secondary--text.text--lighten-4 {
+		color: #a6a6a6 !important;
+		caret-color: #a6a6a6 !important;
+	}
+	
+	.v-application .secondary.lighten-3 {
+		background-color: #8b8b8b !important;
+		border-color: #8b8b8b !important;
+	}
+	
+	.v-application .secondary--text.text--lighten-3 {
+		color: #8b8b8b !important;
+		caret-color: #8b8b8b !important;
+	}
+	
+	.v-application .secondary.lighten-2 {
+		background-color: #727272 !important;
+		border-color: #727272 !important;
+	}
+	
+	.v-application .secondary--text.text--lighten-2 {
+		color: #727272 !important;
+		caret-color: #727272 !important;
+	}
+	
+	.v-application .secondary.lighten-1 {
+		background-color: #595959 !important;
+		border-color: #595959 !important;
+	}
+	
+	.v-application .secondary--text.text--lighten-1 {
+		color: #595959 !important;
+		caret-color: #595959 !important;
+	}
+	
+	.v-application .secondary.darken-1 {
+		background-color: #2c2c2c !important;
+		border-color: #2c2c2c !important;
+	}
+	
+	.v-application .secondary--text.text--darken-1 {
+		color: #2c2c2c !important;
+		caret-color: #2c2c2c !important;
+	}
+	
+	.v-application .secondary.darken-2 {
+		background-color: #171717 !important;
+		border-color: #171717 !important;
+	}
+	
+	.v-application .secondary--text.text--darken-2 {
+		color: #171717 !important;
+		caret-color: #171717 !important;
+	}
+	
+	.v-application .secondary.darken-3 {
+		background-color: #000000 !important;
+		border-color: #000000 !important;
+	}
+	
+	.v-application .secondary--text.text--darken-3 {
+		color: #000000 !important;
+		caret-color: #000000 !important;
+	}
+	
+	.v-application .secondary.darken-4 {
+		background-color: #000000 !important;
+		border-color: #000000 !important;
+	}
+	
+	.v-application .secondary--text.text--darken-4 {
+		color: #000000 !important;
+		caret-color: #000000 !important;
+	}
+	
+	.v-application .accent {
+		background-color: #82b1ff !important;
+		border-color: #82b1ff !important;
+	}
+	
+	.v-application .accent--text {
+		color: #82b1ff !important;
+		caret-color: #82b1ff !important;
+	}
+	
+	.v-application .accent.lighten-5 {
+		background-color: #ffffff !important;
+		border-color: #ffffff !important;
+	}
+	
+	.v-application .accent--text.text--lighten-5 {
+		color: #ffffff !important;
+		caret-color: #ffffff !important;
+	}
+	
+	.v-application .accent.lighten-4 {
+		background-color: #f8ffff !important;
+		border-color: #f8ffff !important;
+	}
+	
+	.v-application .accent--text.text--lighten-4 {
+		color: #f8ffff !important;
+		caret-color: #f8ffff !important;
+	}
+	
+	.v-application .accent.lighten-3 {
+		background-color: #daffff !important;
+		border-color: #daffff !important;
+	}
+	
+	.v-application .accent--text.text--lighten-3 {
+		color: #daffff !important;
+		caret-color: #daffff !important;
+	}
+	
+	.v-application .accent.lighten-2 {
+		background-color: #bce8ff !important;
+		border-color: #bce8ff !important;
+	}
+	
+	.v-application .accent--text.text--lighten-2 {
+		color: #bce8ff !important;
+		caret-color: #bce8ff !important;
+	}
+	
+	.v-application .accent.lighten-1 {
+		background-color: #9fccff !important;
+		border-color: #9fccff !important;
+	}
+	
+	.v-application .accent--text.text--lighten-1 {
+		color: #9fccff !important;
+		caret-color: #9fccff !important;
+	}
+	
+	.v-application .accent.darken-1 {
+		background-color: #6596e2 !important;
+		border-color: #6596e2 !important;
+	}
+	
+	.v-application .accent--text.text--darken-1 {
+		color: #6596e2 !important;
+		caret-color: #6596e2 !important;
+	}
+	
+	.v-application .accent.darken-2 {
+		background-color: #467dc6 !important;
+		border-color: #467dc6 !important;
+	}
+	
+	.v-application .accent--text.text--darken-2 {
+		color: #467dc6 !important;
+		caret-color: #467dc6 !important;
+	}
+	
+	.v-application .accent.darken-3 {
+		background-color: #2364aa !important;
+		border-color: #2364aa !important;
+	}
+	
+	.v-application .accent--text.text--darken-3 {
+		color: #2364aa !important;
+		caret-color: #2364aa !important;
+	}
+	
+	.v-application .accent.darken-4 {
+		background-color: #004c90 !important;
+		border-color: #004c90 !important;
+	}
+	
+	.v-application .accent--text.text--darken-4 {
+		color: #004c90 !important;
+		caret-color: #004c90 !important;
+	}
+	
+	.v-application .error {
+		background-color: #ff5252 !important;
+		border-color: #ff5252 !important;
+	}
+	
+	.v-application .error--text {
+		color: #ff5252 !important;
+		caret-color: #ff5252 !important;
+	}
+	
+	.v-application .error.lighten-5 {
+		background-color: #ffe4d5 !important;
+		border-color: #ffe4d5 !important;
+	}
+	
+	.v-application .error--text.text--lighten-5 {
+		color: #ffe4d5 !important;
+		caret-color: #ffe4d5 !important;
+	}
+	
+	.v-application .error.lighten-4 {
+		background-color: #ffc6b9 !important;
+		border-color: #ffc6b9 !important;
+	}
+	
+	.v-application .error--text.text--lighten-4 {
+		color: #ffc6b9 !important;
+		caret-color: #ffc6b9 !important;
+	}
+	
+	.v-application .error.lighten-3 {
+		background-color: #ffa99e !important;
+		border-color: #ffa99e !important;
+	}
+	
+	.v-application .error--text.text--lighten-3 {
+		color: #ffa99e !important;
+		caret-color: #ffa99e !important;
+	}
+	
+	.v-application .error.lighten-2 {
+		background-color: #ff8c84 !important;
+		border-color: #ff8c84 !important;
+	}
+	
+	.v-application .error--text.text--lighten-2 {
+		color: #ff8c84 !important;
+		caret-color: #ff8c84 !important;
+	}
+	
+	.v-application .error.lighten-1 {
+		background-color: #ff6f6a !important;
+		border-color: #ff6f6a !important;
+	}
+	
+	.v-application .error--text.text--lighten-1 {
+		color: #ff6f6a !important;
+		caret-color: #ff6f6a !important;
+	}
+	
+	.v-application .error.darken-1 {
+		background-color: #df323b !important;
+		border-color: #df323b !important;
+	}
+	
+	.v-application .error--text.text--darken-1 {
+		color: #df323b !important;
+		caret-color: #df323b !important;
+	}
+	
+	.v-application .error.darken-2 {
+		background-color: #bf0025 !important;
+		border-color: #bf0025 !important;
+	}
+	
+	.v-application .error--text.text--darken-2 {
+		color: #bf0025 !important;
+		caret-color: #bf0025 !important;
+	}
+	
+	.v-application .error.darken-3 {
+		background-color: #9f0010 !important;
+		border-color: #9f0010 !important;
+	}
+	
+	.v-application .error--text.text--darken-3 {
+		color: #9f0010 !important;
+		caret-color: #9f0010 !important;
+	}
+	
+	.v-application .error.darken-4 {
+		background-color: #800000 !important;
+		border-color: #800000 !important;
+	}
+	
+	.v-application .error--text.text--darken-4 {
+		color: #800000 !important;
+		caret-color: #800000 !important;
+	}
+	
+	.v-application .info {
+		background-color: #2196f3 !important;
+		border-color: #2196f3 !important;
+	}
+	
+	.v-application .info--text {
+		color: #2196f3 !important;
+		caret-color: #2196f3 !important;
+	}
+	
+	.v-application .info.lighten-5 {
+		background-color: #d4ffff !important;
+		border-color: #d4ffff !important;
+	}
+	
+	.v-application .info--text.text--lighten-5 {
+		color: #d4ffff !important;
+		caret-color: #d4ffff !important;
+	}
+	
+	.v-application .info.lighten-4 {
+		background-color: #b5ffff !important;
+		border-color: #b5ffff !important;
+	}
+	
+	.v-application .info--text.text--lighten-4 {
+		color: #b5ffff !important;
+		caret-color: #b5ffff !important;
+	}
+	
+	.v-application .info.lighten-3 {
+		background-color: #95e8ff !important;
+		border-color: #95e8ff !important;
+	}
+	
+	.v-application .info--text.text--lighten-3 {
+		color: #95e8ff !important;
+		caret-color: #95e8ff !important;
+	}
+	
+	.v-application .info.lighten-2 {
+		background-color: #75ccff !important;
+		border-color: #75ccff !important;
+	}
+	
+	.v-application .info--text.text--lighten-2 {
+		color: #75ccff !important;
+		caret-color: #75ccff !important;
+	}
+	
+	.v-application .info.lighten-1 {
+		background-color: #51b0ff !important;
+		border-color: #51b0ff !important;
+	}
+	
+	.v-application .info--text.text--lighten-1 {
+		color: #51b0ff !important;
+		caret-color: #51b0ff !important;
+	}
+	
+	.v-application .info.darken-1 {
+		background-color: #007cd6 !important;
+		border-color: #007cd6 !important;
+	}
+	
+	.v-application .info--text.text--darken-1 {
+		color: #007cd6 !important;
+		caret-color: #007cd6 !important;
+	}
+	
+	.v-application .info.darken-2 {
+		background-color: #0064ba !important;
+		border-color: #0064ba !important;
+	}
+	
+	.v-application .info--text.text--darken-2 {
+		color: #0064ba !important;
+		caret-color: #0064ba !important;
+	}
+	
+	.v-application .info.darken-3 {
+		background-color: #004d9f !important;
+		border-color: #004d9f !important;
+	}
+	
+	.v-application .info--text.text--darken-3 {
+		color: #004d9f !important;
+		caret-color: #004d9f !important;
+	}
+	
+	.v-application .info.darken-4 {
+		background-color: #003784 !important;
+		border-color: #003784 !important;
+	}
+	
+	.v-application .info--text.text--darken-4 {
+		color: #003784 !important;
+		caret-color: #003784 !important;
+	}
+	
+	.v-application .success {
+		background-color: #4caf50 !important;
+		border-color: #4caf50 !important;
+	}
+	
+	.v-application .success--text {
+		color: #4caf50 !important;
+		caret-color: #4caf50 !important;
+	}
+	
+	.v-application .success.lighten-5 {
+		background-color: #dcffd6 !important;
+		border-color: #dcffd6 !important;
+	}
+	
+	.v-application .success--text.text--lighten-5 {
+		color: #dcffd6 !important;
+		caret-color: #dcffd6 !important;
+	}
+	
+	.v-application .success.lighten-4 {
+		background-color: #beffba !important;
+		border-color: #beffba !important;
+	}
+	
+	.v-application .success--text.text--lighten-4 {
+		color: #beffba !important;
+		caret-color: #beffba !important;
+	}
+	
+	.v-application .success.lighten-3 {
+		background-color: #a2ff9e !important;
+		border-color: #a2ff9e !important;
+	}
+	
+	.v-application .success--text.text--lighten-3 {
+		color: #a2ff9e !important;
+		caret-color: #a2ff9e !important;
+	}
+	
+	.v-application .success.lighten-2 {
+		background-color: #85e783 !important;
+		border-color: #85e783 !important;
+	}
+	
+	.v-application .success--text.text--lighten-2 {
+		color: #85e783 !important;
+		caret-color: #85e783 !important;
+	}
+	
+	.v-application .success.lighten-1 {
+		background-color: #69cb69 !important;
+		border-color: #69cb69 !important;
+	}
+	
+	.v-application .success--text.text--lighten-1 {
+		color: #69cb69 !important;
+		caret-color: #69cb69 !important;
+	}
+	
+	.v-application .success.darken-1 {
+		background-color: #2d9437 !important;
+		border-color: #2d9437 !important;
+	}
+	
+	.v-application .success--text.text--darken-1 {
+		color: #2d9437 !important;
+		caret-color: #2d9437 !important;
+	}
+	
+	.v-application .success.darken-2 {
+		background-color: #00791e !important;
+		border-color: #00791e !important;
+	}
+	
+	.v-application .success--text.text--darken-2 {
+		color: #00791e !important;
+		caret-color: #00791e !important;
+	}
+	
+	.v-application .success.darken-3 {
+		background-color: #006000 !important;
+		border-color: #006000 !important;
+	}
+	
+	.v-application .success--text.text--darken-3 {
+		color: #006000 !important;
+		caret-color: #006000 !important;
+	}
+	
+	.v-application .success.darken-4 {
+		background-color: #004700 !important;
+		border-color: #004700 !important;
+	}
+	
+	.v-application .success--text.text--darken-4 {
+		color: #004700 !important;
+		caret-color: #004700 !important;
+	}
+	
+	.v-application .warning {
+		background-color: #fb8c00 !important;
+		border-color: #fb8c00 !important;
+	}
+	
+	.v-application .warning--text {
+		color: #fb8c00 !important;
+		caret-color: #fb8c00 !important;
+	}
+	
+	.v-application .warning.lighten-5 {
+		background-color: #ffff9e !important;
+		border-color: #ffff9e !important;
+	}
+	
+	.v-application .warning--text.text--lighten-5 {
+		color: #ffff9e !important;
+		caret-color: #ffff9e !important;
+	}
+	
+	.v-application .warning.lighten-4 {
+		background-color: #fffb82 !important;
+		border-color: #fffb82 !important;
+	}
+	
+	.v-application .warning--text.text--lighten-4 {
+		color: #fffb82 !important;
+		caret-color: #fffb82 !important;
+	}
+	
+	.v-application .warning.lighten-3 {
+		background-color: #ffdf67 !important;
+		border-color: #ffdf67 !important;
+	}
+	
+	.v-application .warning--text.text--lighten-3 {
+		color: #ffdf67 !important;
+		caret-color: #ffdf67 !important;
+	}
+	
+	.v-application .warning.lighten-2 {
+		background-color: #ffc24b !important;
+		border-color: #ffc24b !important;
+	}
+	
+	.v-application .warning--text.text--lighten-2 {
+		color: #ffc24b !important;
+		caret-color: #ffc24b !important;
+	}
+	
+	.v-application .warning.lighten-1 {
+		background-color: #ffa72d !important;
+		border-color: #ffa72d !important;
+	}
+	
+	.v-application .warning--text.text--lighten-1 {
+		color: #ffa72d !important;
+		caret-color: #ffa72d !important;
+	}
+	
+	.v-application .warning.darken-1 {
+		background-color: #db7200 !important;
+		border-color: #db7200 !important;
+	}
+	
+	.v-application .warning--text.text--darken-1 {
+		color: #db7200 !important;
+		caret-color: #db7200 !important;
+	}
+	
+	.v-application .warning.darken-2 {
+		background-color: #bb5900 !important;
+		border-color: #bb5900 !important;
+	}
+	
+	.v-application .warning--text.text--darken-2 {
+		color: #bb5900 !important;
+		caret-color: #bb5900 !important;
+	}
+	
+	.v-application .warning.darken-3 {
+		background-color: #9d4000 !important;
+		border-color: #9d4000 !important;
+	}
+	
+	.v-application .warning--text.text--darken-3 {
+		color: #9d4000 !important;
+		caret-color: #9d4000 !important;
+	}
+	
+	.v-application .warning.darken-4 {
+		background-color: #802700 !important;
+		border-color: #802700 !important;
+	}
+	
+	.v-application .warning--text.text--darken-4 {
+		color: #802700 !important;
+		caret-color: #802700 !important;
+		<style type="text/css">
+	</style>
+</head>
+
+<body>
+	<div id="app">
+		<div data-app="true" class="v-application v-application--is-ltr theme--light" id="inspire">
+			<div class="v-application--wrap">
+				<header data-v-eabca16c="">
+					<header data-v-eabca16c="" class="v-sheet theme--dark v-toolbar v-app-bar v-app-bar--fixed" style="height: 60px; margin-top: 0px; transform: translateY(0px); left: 0px; right: 0px; background-color: rgb(36, 57, 128); border-color: rgb(36, 57, 128);" data-booted="true">
+						<div class="v-toolbar__content" style="height: 60px;">
+							<div data-v-eabca16c="" class="v-toolbar__title"></div>
+							<div data-v-eabca16c="" class="spacer"></div><img data-v-eabca16c="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAaCAYAAAC+aNwHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACfSURBVHgB7ZXdDYMgFIXPbfpeR2g36Ah0kqYTNW7gCk6gI7iBbCAb4MFgYkxExDfDSU4gAb7783ARUNbagotzrIyIGPjHf5um3gUWt3FEujyQgaK/9Oe+SKmKfc2g8ADccFIZkAEZcBnAPFAKDokn4vVYA950jwSFSqjpF/1DImDgnNRcdeDOVILZOFPsS4Pwf6HFN0/5iwb7moEdM2xHlQhisZJSOzwAAAAASUVORK5CYII=" alt="">
+							<div data-v-eabca16c="" class="text"><a href="tel:+73512679115">+7 (351) 267-91-15</a></div>
+							<div data-v-eabca16c="" class="space"></div><img data-v-eabca16c="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAnCAYAAACbgcH8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHwSURBVHgB7ViLccIwDFV6HYAR0glKJ2hGaDdgA9gANoBOYDagG6QblA3CBmWDV6mE1vXJwXECSe7y7gTBVtCzoo8dohEjRowY0Wck8gEg5a+U+o9jkiT7nysmvcUwYITvHQ0Q98rYK8ue+oOMxdgDGulnjpt36gk4JB59E25MFzglZ2dg+xnLZ52YTlmE+JplQjeE2BO7fJmzTKsUbU/vFK/P6DaEs9LeGV8OH+MjLTemLLn7aK4VMqU911l5OZ4FkbbGZ87K5XpBLYL/b1561PbuwpqvR9ryQuuJyvdPoT/NiaNXn7Sl43pdsKT6ZCXRlooTMo9+PGlLd6UYfKEwwpmy8A0qKlQrpEv9VDFu4AmZ0rtrRz9nmQYutDlp674F/idRAac84kKixZBuumGC8ztlMTiVLzEmDWLDYj/+I7WBiPDwZX4BHQUiKxCahgcuZD5Osb5x5n8TDREVCA1Lnpb5KyiZj79ONvH8V3AFQmRzEe8ax0iOgMyvAgIrUG3SaJj5geQrK1AwaegbphzX3TBtNXuhpHfKyoM6XgvktUQN2praqGyxVyKuVaAg0nLMyahDwJOoMqd1xDc+2D6xfFCHYPsHlgfh485pp/E9Oj7UOpCtwNwe0Egb6jkG+Ybp/AJSuttNq0QkJM4PNER8A9Y1NdxY4xZ0AAAAAElFTkSuQmCC" alt="" width="30px">
+							<div data-v-eabca16c="" class="text"><a href="mailto:pmfdek@susu.ru ">pmfdek@susu.ru </a></div>
+							<div data-v-eabca16c="" class="space"></div>
+							<button data-v-eabca16c="" type="button" class="v-app-bar__nav-icon barnav hidden-md-and-up v-btn v-btn--flat v-btn--icon v-btn--round theme--dark v-size--default"><span class="v-btn__content"><i data-v-eabca16c="" aria-hidden="true" class="v-icon notranslate mdi mdi-menu theme--dark"></i></span></button>
+						</div>
+					</header>
+					<nav data-v-eabca16c="" class="v-navigation-drawer v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--is-mobile v-navigation-drawer--right v-navigation-drawer--temporary theme--light white" style="height: 100vh; top: 0px; transform: translateX(100%); width: 256px;" data-booted="true">
+						<div class="v-navigation-drawer__content">
+							<div data-v-eabca16c="" class="v-list v-sheet theme--light v-list--dense v-list--nav">
+								<div data-v-eabca16c="" tabindex="-1" class="v-list-item theme--light">
+									<div data-v-eabca16c="" class="v-list-item__title"><a data-v-50bf2d62="" data-v-eabca16c="" href="https://yevgenevna.github.io/" aria-current="page" class="router router-link-exact-active router-link-active">ГЛАВНАЯ</a></div>
+								</div>
+								<div data-v-eabca16c="" tabindex="-1" class="v-list-item theme--light">
+									<div data-v-eabca16c="" class="v-list-item__title"><a data-v-50bf2d62="" data-v-eabca16c="" href="https://yevgenevna.github.io/essay.html" class="router">СЕНСОРЫ</a></div>
+								</div>
+								<div data-v-eabca16c="" tabindex="-1" class="v-list-item theme--light">
+									<div data-v-eabca16c="" class="v-list-item__title"><a data-v-50bf2d62="" data-v-eabca16c="" href="https://yevgenevna.github.io/legallaw.html" class="router">ЮРИДИЧЕСКИЕ ЗАКОНЫ</a></div>
+								</div>
+								<div data-v-eabca16c="" tabindex="-1" class="v-list-item theme--light">
+									<div data-v-eabca16c="" class="v-list-item__title"><a data-v-50bf2d62="" data-v-eabca16c="" href="https://yevgenevna.github.io/businesscard.html" class="router">НАУЧНАЯ ШКОЛА</a></div>
+								</div>
+								<div data-v-eabca16c="" tabindex="-1" class="v-list-item theme--light">
+									<div data-v-eabca16c="" class="v-list-item__title"><a data-v-50bf2d62="" data-v-eabca16c="" href="https://yevgenevna.github.io/constructor.html" class="router">КОНСТРУКТОР</a></div>
+								</div>
+								<div data-v-eabca16c="" tabindex="-1" class="v-list-item theme--light">
+									<div data-v-eabca16c="" class="v-list-item__title"><a data-v-50bf2d62="" data-v-eabca16c="" href="https://yevgenevna.github.io/chavo.html" class="router">ЧАВО</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="v-navigation-drawer__border"></div>
+					</nav>
+				</header>
+				<main class="v-main styled-input" style="padding: 60px 0px 0px;" data-booted="true">
+					<div class="v-main__wrap">
+						<div data-v-24161648="" class="row-flex hidden-sm-and-down">
+						<a data-v-50bf2d62="" data-v-24161648="" href="https://yevgenevna.github.io/" aria-current="page" class="router router-link-exact-active router-link-active">ГЛАВНАЯ</a>
+						<a data-v-50bf2d62="" data-v-24161648="" href="https://yevgenevna.github.io/essay" class="router">СЕНСОРЫ</a>
+						<a data-v-50bf2d62="" data-v-24161648="" href="https://yevgenevna.github.io/legallaw" class="router">ЮРИДИЧЕСКИЕ ЗАКОНЫ</a>
+						<a data-v-50bf2d62="" data-v-24161648="" href="https://yevgenevna.github.io/businesscard" class="router">НАУЧНАЯ ШКОЛА</a>
+						<a data-v-50bf2d62="" data-v-24161648="" href="https://yevgenevna.github.io/constructor" class="router">КОНСТРУКТОР</a>
+						<a data-v-50bf2d62="" data-v-24161648="" href="https://yevgenevna.github.io/chavo" class="router">ЧАВО</a></div>
+						
+						<div data-v-621e45e3="" class="fon-container">
+							<div data-v-7bc80574="" data-v-621e45e3="" class="column-flex">
+								<div data-v-7bc80574="" class="blue-container">СЕНСОРЫ</div>
+								<div data-v-7bc80574="">
+									<!--
+									<div data-v-7bc80574="" class="dron"><img data-v-7bc80574="" src="./files/13.png" alt="" class="images"><img data-v-7bc80574="" src="./files/14.png" alt="" class="images"><img data-v-7bc80574="" src="./files/1.png" alt="" class="copter-image images"><img data-v-7bc80574="" src="./files/2.png" alt="" class="copter-image images"><img data-v-7bc80574="" src="./files/3.png" alt="" class="copter-image images"><img data-v-7bc80574="" src="./files/5.png" alt="" class="copter-image images"><img data-v-7bc80574="" src="./files/6.png" alt="" class="copter-image images"><img data-v-7bc80574="" src="./files/7.png" alt="" class="copter-image images"><img data-v-7bc80574="" src="./files/8.png" alt="" class="copter-image images"><img data-v-7bc80574="" src="./files/9.png" alt="" class="copter-image images"><img data-v-7bc80574="" src="./files/10.png" alt="" class="copter-image images"><img data-v-7bc80574="" src="./files/11.png" alt="" class="copter-image images"><img data-v-7bc80574="" src="./files/12.png" alt="" class="copter-image images"></div>
+								</div>
+								-->
+							</div>
+							<div data-v-99d969aa="" data-v-621e45e3="" class="column-flex">
+								<div class="text" style="width:1000px; text-align:left;">
+								<br>
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Что такое дрон?</b></span></summary>
+								Дрон – беспилотный летательный аппарат (БПЛА), который способен автономно перемещаться в воздухе и не требует непосредственного пилотирования. Аппараты управляются с помощью пульта или бортового компьютера. Первые прототипы беспилотников появились ещё в конце 19 века и разрабатывались в военных целях. Полностью автономные дроны начали производить во второй половине 20 века, регулярно усовершенствуя механизм их работы.
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Что делает дрон-метеоролог?</b></span></summary>
+								Дрон-метеоролог может полететь прямо в эпицентр шторма, или даже погрузиться в воду, собирая ранее недоступную для человека информацию о тенденциях и перемещении атмосферных явлений.
+								<br>
+								Идея состоит в том, чтобы одновременно запускать десятки таких устройств в разные точки надвигающегося шторма, управляя ими с обычного ноутбука. Математические модели позволят устройству самому корректировать направление, а сенсоры — отключить двигатели, когда дрон «сольется» со штормом, чтобы экономить топливо.
+
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Дроны действительно могут переносить предметы?</b></span></summary>
+								Да, но только специализированные модели особо крупных размеров. Такие дроны называют грузовыми или транспортными, и они действительно могут переносить небольшой груз. Все остальные дроны рассчитаны только на собственный вес и вес камеры, поэтому не могут переносить дополнительную нагрузку
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Нужно ли иметь доступ к интернету на телефоне, чтоб соединить телефон с дроном и осуществить полет?</b></span></summary>
+								Нет. Источником сигнала wi-fi является сам квадрокоптер, телефон подсоединяется к этой сети. Внешний интернет для полетов не нужен (только для предварительной загрузки карты места, где предполагается полет). 
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Как действует функция «возврат домой» (RTH)?</b></span></summary>
+								Процедура RTH возвращает дрон к последней̆ зарегистрированной̆ домашней̆ точке (место взлета дрона). Существует три типа процедур RTH: умный̆ RTH (возвращение дрона при нажатии на кнопку), RTH при низком уровне заряда батареи и отказоустойчивый RTH (при потере сигнала пульта более 6 сек). Во время движения дрона в режиме RTH вы можете корректировать его траекторию с пульта. 
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Ультразвуковой и оптический датчики на моделях MJX позволяют облетать препятствия?</b></span></summary>
+								Нет. Они предназначены для более точного определения высоты над землей, более плавной посадки дрона. Эти датчики также помогают, когда сигнал GPS слабый или же недоступен. Эффективны на высоте 3 м.
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Какие типы дронов бывают?</b></span></summary>
+								<ul>
+								<li>RTF (Ready to Fly/Готов к полёту) — беспилотник, который доходит до пользователя в полностью собранном виде со всеми необходимыми деталями. Просто зарядите аккумулятор и летите!
+								</li>
+								<li>BNF (Bind and Fly/Привяжи и лети) — беспилотник поставляется полностью собранным и включает в себя приёмник. Пользователю нужно только выбрать совместимый передатчик и «привязать» его к приёмнику.
+								</li>
+								<li>ARF (Almost Ready to Fly/Почти готов к полёту) — беспилотник, который поставляется в разобранном виде почти со всеми частями необходимыми для полёта. Такие компоненты как, пульт управления и приёмник, могут отсутствовать.
+								</li>
+								<li>IY (Do It Yourself/Сделай сам) — в настоящее время такую сборку называют «кастомной». Как правило подразумевает использование деталей от разных поставщиков и создание или модификацию деталей.
+								</li>
+								<li>БЛА (БПЛА)/UAV — Беспилотный Летательный Аппарат/Unmanned Aerial Vehicles (любой).
+								</li>
+								<li>Дрон (Drone) — синоним БПЛА (UAV). Термин «дрон» наиболее применим для военной сферы, тогда как «БПЛА» для хобби.
+								</li>
+								<li>Мультиротор (Multirotor) — БПЛА с несколькими моторами.
+								</li>
+								<li>Трикоптер (Tricopter) — БПЛА, который имеет три мотора/пропеллера и как правило три опорных луча.
+								</li>
+								<li>Квадрокоптер (Quadrocopter) — БПЛА, который имеет четыре мотора/пропеллера и четыре опорных луча. Обычно это конфигурация «+» (где, перед беспилотника обращен к одному из лучей) или «X» (где, перед беспилотника обращен между двумя опорными лучами).
+								</li>
+								<li>Гексакоптер (Hexacopter) — БПЛА, силовая установка которого имеет шесть моторов/пропеллеров.
+								</li>
+								<li>Октокоптер (Octocopter) — БПЛА, силовая установка которого имеет восемь моторов/пропеллеров.
+								</li>
+								<li>Spyder — БПЛА типа «Spyder (Паук)» (обычно квадрокоптер или гексакоптер) у которых опорные лучи располагаются относительно друг друга не симметрично, если смотреть сверху.
+								</li>
+								<li>V-Tail — БПЛА, который имеет четыре луча, из которых два задних располагаются под углом, образующим «V».
+								</li>
+								</ul>
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Из чего состоит дрон?</b></span></summary>
+								<ul>
+								<li>CG (Center of Gravity/Центр тяжести) — это точка на воздушном судне, где вес распределён одинаково по всем сторонам.
+								</li>
+								<li>Рама (Frame) —это своего рода «скелет» воздушного судна, на котором крепятся все детали. Простые рамы имеют моторы, подключенные к алюминиевым или другим лёгким профилям («лучам»), которые затем соединяются с центральным корпусом.
+								</li>
+								<li>Оболочка/Корпус (Shell) — эстетическое/функциональное покрытие, используемое для улучшения сопротивления элементам, а иногда и для улучшения аэродинамики. Некоторые серийно выпускаемые БПЛА имеют только пластиковую оболочку, которая также выступает в качестве «рамы».
+								</li>
+								<li>Посадочные опоры (Landing gear) — как правило, многомоторный дрон в отличии от самолёта не имеет колёс, их роль выполняют посадочные опоры. Опоры предотвращают перемещение по земле и снижают общий вес.
+								</li>
+								<li>Retract/Retractable — обычно относится к шасси, которое имеет два положения: одно для посадки и взлёта, а другое, которое занимает меньше места или улучшает обзор во время полёта.
+								</li>
+								<li>G10 — этот материал обычно используют вместо углеродного волокна для изготовления каркаса БПЛА, поскольку он не только очень жёсткий и лёгкий, но значительно дешевый.
+								</li>
+								<li>Защита пропеллеров (Propeller guards/Prop Guards) — это материал, который окружает пропеллер, чтобы препятствовать контакту несущего винта с другими объектами. Защита реализована как средство обеспечения безопасности и способ минимизировать повреждение беспилотника.
+								</li>
+								<li>Разъёмы/Коннекторы (Connectors) — для соединения и разъединения проводов на их концах применяют разъёмы. Распространённые разъёмы для батарей – «Deans» и «XT60», в то время как разъёмы для контроллера полёта и датчиков расположены с интервалом 0.1 дюйма (2.5мм).
+								</li>
+								<li>Хомут (Clamp) — «Tube clamp/Трубный хомут» это устройство, обычно используемое на круглой трубе для соединения её с другим устройством (например, с креплением мотора или корпусом БПЛА).
+								</li>
+								<li>Демпферы (Dampeners) — формованные резиновые детали, используемые для минимизации вибрации, передаваемой по беспилотнику.
+								</li>
+								<li>Светодиоды (LED — Light Emitting Diode) — применяются с целью обозначить БПЛА в полёте, особенно ночью или в условиях слабого освещения.
+								</li>
+
+								</ul>
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Что входит в силовую установку?</b></span></summary>
+								<ul>
+								<li>Тяга/Thrust — это сила, которую может обеспечить конкретный мотор и пропеллер (при определенном напряжении). Обычно измеряется в килограммах (кг/kg) или фунтах (Фунтах/Pounds/Lbs).
+								<li> BEC — (Battery Eliminator Circuit/Преобразователь бортового питания) встроен в ESC (регулятор напряжения), который может обеспечить регулируемое 5В напряжение постоянного тока для любой электроники, которая в этом нуждается.
+								</li>
+								<li>ESC (Electronic Speed Controller/Электронный регулятор скорости) — устройство, которое подключается к аккумулятору, мотору и контроллеру полёта и контролирует скорость вращения мотора.
+								</li>
+								<li>Мотор/Motor — то, что применяется для вращения пропеллеров; в небольших беспилотных летательных аппаратах чаще всего используется коллекторный (Brushed) мотор, тогда как для более крупных беспилотных летательных аппаратов – бесколлекторный (Brushless).
+								</li>
+								<li>Лопасти/Blades (лопасти пропеллера) — аэродинамическая поверхность, создающая подъёмную силу. Как правило пропеллер имеет от двух до четырёх лопастей, которые могут быть как фиксированными, так и складными.
+								</li>
+								<li>Пропеллер/Propeller (Несущий винт/сокр. Проп) — пропеллеры обеспечивают тягу и больше похожи на те, что используются в самолётах.
+								</li>
+								<li>Адаптер пропеллера/Prop Adapter — устройство, используемое для сопряжения пропеллера с мотором.
+								</li>
+								<li>Пропсейвер/Prop Saver — тип втулки, которая устанавливается на верхней части используемого мотора и заменяет адаптер пропеллера/Prop Adapter. В случае аварии часть пропсейвера идёт в расход, чтобы сохранить целостность пропеллера.
+								</li>
+								<li>PCB (Printed Circuit Board/Печатная плата) — стеклопластиковая пластина, на которой припаяно множество компонентов. Многие электронные продукты имеют печатную плату.
+								</li>
+								<li>LiPo (Lithium Polymer/Литий-Полимерный) — является наиболее распространенной батареей, используемой в дронах и беспилотных летательных аппаратах из-за её малого веса (относительно ёмкости хранения), а также высокой скорости разряда тока. Помимо LiPo на рынке доступны и другие типы литиевых батарей (LiFe, LiMn, LiOn и т.д.).
+								</li>
+								<li>Распределение питания/Power Distribution — чтобы питать различное множество устройств, используемых в БПЛА, ресурсы батареи должны быть распределены, и именно здесь в игру вступает распределение питания (плата или кабель). Задействует одну положительную и отрицательную клеммы батареи и предоставляет множество различных клемм/точек подключения, от которых другие устройства (работающие на том же напряжении) могут получать питание.
+								</li>
+								<li>Сервопривод/Servo — тип привода, который при правильном сигнале может перемещаться в определенное угловое положение.
+								</li>
+
+								</ul>
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>С помощью чего осуществляется управление?</b></span></summary>
+								<ul>
+								<li>База (Base)/Земля (Ground)/Станция управления (Control Station) — вместо (или в дополнение) к ручной аппаратуре управления (передатчику) используется станция (обычно в корпусе или на штативе) для размещения/интеграции необходимых компонентов, используемых для управления БПЛА. Может включать передатчик, антенну(ы), видеоприёмник, монитор, аккумулятор, компьютер и другие устройства.
+								</li>
+								<li>Привязка/Binding — термин «привязка» относится к настройке портативного передатчика, чтобы он мог связываться с приёмником; если передатчик комплектуется с приёмником, эту настройку должны сделать на заводе.
+								</li>
+								<li>Канал/Channel — количество каналов в передатчике относится к числу отдельных сигналов, которые он может передавать.
+								</li>
+								<li>Контроллер полёта/Flight Controller — это то, что считается «мозгом» беспилотного летательного аппарата, который обрабатывает все поступающие данные, расчёты и сигналы. Ядром контроллера полёта часто является программируемый «микроконтроллер». Контроллер полёта может иметь несколько датчиков на борту, включая акселерометр, гироскоп, барометр, компас, GPS и т.д. Если контроллер полёта имеет возможность управлять самолётом самостоятельно (например, для полёта по заданным GPS координатам), его можно считать «автопилотом».
+								</li>
+								<li>Соединительные жгуты/Harness — как правило это относится к «жгуту проводов», в который входят провода, соединяющие приёмник с контроллером полёта (и иногда с другими устройствами).
+								</li>
+								<li>ВЧ/ОВЧ/УВЧ (HF/VHF/UHF) — название частот, где ВЧ (HF) — высокие (High Frequency); ОВЧ (VHF) — очень высокие (Very High Frequency) и УВЧ (UHF) — ультравысокие (Ultra High Frequency). Измеряются в герцах (Гц/Hz).
+								</li>
+								<li>Приёмник/Receiver — это то, что участвует в процессе обработки дистанционно полученной информации.
+								</li>
+								<li>Sketch/Code — программа, которая загружается на контроллер полёта беспилотника (аналогично мыслительному процессу).
+								</li>
+								<li>Передатчик/Радио (Transmitter/Radio) — это то, что генерирует управляющий сигнал(ы) и дистанционно передаёт приёмнику.
+								</li>
+
+								
+								</ul>
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Как осуществляется видеозапись?</b></span></summary>
+								<ul>
+								<li>FPV (First Person View/Вид от первого лица) — термин применим к полёту от первого лица, когда беспилотник оборудован FPV камерой, а пользователь, используя FPV монитор/FPV очки получает видео с этой камеры в режиме реального времени.
+								</li>
+								<li>VR (Virtual Reality/Виртуальная реальность) очки/Glasses/Goggles — предоставляют пользователю более «захватывающий» опыт.
+								</li>
+								<li>Подвес/Gimbal — устройства, которые сопряжены с камерой и как правило приводятся в действие с помощью серводвигателя или бесколлекторного мотора постоянного тока. Подвес — это то, что может стабилизировать камеру в полёте.
+								</li>
+								<li>GoPro — cерия экшн камер GoPro широко использующихся для съёмки и/или передачи видео.
+								</li>
+								<li>LCD/ЖКД (Liquid Crystal Display/Жидкокристаллический дисплей) — это тип дисплея/монитора, используемого для отображения изображения, полученного видеоприёмником.
+								</li>
+								<li>OSD (On Screen Display/На дисплее) — отображает данные полёта на дисплее/мониторе, которые отправляются с БПЛА (например: высота, спутниковые координаты местоположения и т.д.).
+								</li>
+
+								
+								</ul>
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Какие есть преимущества и недостатки у трикоптера?</b></span></summary>
+								Преимущества: Необычный внешний вид дрона. Лучших лётных характеристик достигает при полёте в прямом направлении. Цена (для сборки требуется меньшее количество моторов и регуляторов ESC).
+								<br><br>
+								Недостатки: Асимметричная конструкция. Требует применение сервопривода. Сложность исполнения заднего луча (поскольку сервопривод должен быть установлен вдоль оси). Не все полётные контроллеры поддерживают такую конфигурацию.
+
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Какие есть преимущества и недостатки у квадрокоптера?</b></span></summary>
+								Преимущества: Самый распространённый мультироторный дизайн. Простейшая и универсальная конструкция. В стандартной конфигурации лучи/моторы симметричны относительно двух осей. Все доступные на рынке контроллеры полёта могут работать с такой мультироторной сборкой.
+								<br><br>
+								Недостатки: Отсутствие избыточности (если в системе происходит сбой, особенно в элементах силовой установки, беспилотник падает).
+
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Какие есть преимущества и недостатки у гексакоптера?</b></span></summary>
+								Преимущества: при необходимости, конструкция гексакоптера позволяет легко добавить два дополнительных луча и мотора, что позволит увеличить суммарную тягу, в следствии чего дрон сможет поднять больше полезной нагрузки. В случае отказа одного из моторов, допускается вероятность, что дрон сможет осуществить мягкую посадку, а не разбиться. Модульная конструкция рамы. Почти все полётные контроллеры поддерживают эту конфигурацию.
+								<br><br>
+								Недостатки: Громоздкая и дорогостоящая конструкция. Дополнительные двигатели и детали увеличивают вес коптера, соответственно, чтобы получить туже продолжительность полёта, что и у квадрокоптера, необходимо устанавливать более ёмкие АКБ.
+
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Какие есть преимущества и недостатки у октокопрера?</b></span></summary>
+								Преимущества: больше моторов = больше тяги, и соответственно повышенная избыточность, позволяющая дрону уверенно перемещаться с тяжёлыми и дорогостоящими DSLR камерами.
+								<br><br>
+								Недостатки: больше моторов = более высокая цена и большой АКБ. Ввиду своей дороговизны актуален только для профессиональной сферы.
+
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Какие есть типы бесколлекторных моторов?</b></span></summary>
+								<ul>
+								<li>Inrunner – внутренний ротор. Обмотка зафиксирована на статоре, магниты установлены на валу ротора, который вращается (как правило используются на радиоуправляемых лодках, вертолётах и автомобилях из-за высокого KV).
+								<li>Outrunner – наружный ротор. Магниты зафиксированы на статоре, который вращается вокруг неподвижной обмотки. Нижняя часть мотора зафиксирована. (как правило, у моторов такого типа больше крутящего момента).</li>
+								<li>Hybrid Outrunner – технически это «Outrunner», но реализованный в корпусе «Inrunner». Такой подход позволил объединить в одном типе крутящий момент «Outrunner» и отсутствие внешних вращающихся элементов как у моторов типа «Inrunner».
+								</li>
+
+								</ul>
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Как подобрать лопасти и диаметр?</b></span></summary>
+								Несущие винты большинства мультироторных БЛА имеют две, либо три лопасти. Наибольшее применение получили винты с двумя лопастями. Не думайте, что добавление большего количества лопастей автоматически приведёт к увеличению тяги; каждая лопасть работает в потоке, возмущенном предыдущей лопастью, снижая КПД пропеллера. Несущий винт малого диаметра имеет меньшую инерцию и, следовательно, его легче ускорять и замедлять, что актуально при акробатическом полёте.
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Из каких материалов делают винты (пропеллеры)?</b></span></summary>
+								<ul>
+								<li>Пластмасса (ABS/Нейлон и т.д.) — является самым популярным выбором, когда речь заходит о многомоторных БЛА. Во многом это связано с низкой стоимостью, достойными лётными характеристиками и показательной долговечностью. Как правило в случае краша, по крайней мере, один пропеллер оказывается сломанным, и пока вы осваиваете дрон и учитесь летать, у вас всегда будет много сломанных пропов. Жёсткость и ударопрочность пластикового винта может быть улучшена посредством усиления углеродным волокном (карбон), такой подход макс. результативен и не так дорог по сравнению с винтом полноценно исполненным и карбона.
+								</li>
+								<li>Фиброармированный полимер (углеродное волокно, нейлон, усиленный карбоном и т.д.) — является «передовой» технологией во многих отношениях. Детали из углеродного волокна всё ещё не очень просты в изготовлении, и поэтому вы платите за них больше, чем за обычный пластиковый винт с аналогичными параметрами. Пропеллер изготовленный из углеродного волокна сложнее сломать или согнуть, и, следовательно, при краше, он нанесёт больший ущерб всему, с чем соприкоснётся. Одновременно с этим, карбоновые винты, как правило, хорошо сделаны, более жёсткие (обеспечивают минимальные потери в эффективности), редко требуют балансировки и имеют более лёгкий вес по сравнению с любыми другими материалами исполнения. Такие винты рекомендуется рассматривать только после того, как уровень пилотирования пользователя станет комфортным.
+								</li>
+								<li>Дерево — редко используемый материал для производства несущих винтов многороторных БЛА, поскольку для их изготовления требуется механическая обработка, которая в последствии делает деревянные пропеллеры дороже пластиковых. При этом дерево вполне прочное и никогда не гнётся. Отметим, что деревянные пропеллеры всё ещё применяют на радиоуправляемых самолётах.
+								</li>
+								
+								</ul>
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Зачем нужна защита несущих винтов?</b></span></summary>
+								
+								Защита несущих винтов – призвана исключить прямой контакт силовой установки БЛА с встречным объектом, сохранив тем самым её целостность и работоспособность, а также не допустить получение травм о быстро вращающиеся пропеллеры в результате столкновения с людьми и животными. Защита пропеллеров крепится к основной раме. В зависимости от варианта исполнения может как частично перекрывать рабочую зону силовой установки, так и полностью (кольцевая защита). Защита винтов чаще всего применяется на небольших (игрушечных) БЛА. <br><br>Применение в сборке элементов защиты несёт и ряд компромиссов, среди которых:<br><br>
+								<ul>
+								<li>Может вызывать избыточную вибрацию.</li>
+								<li>Как правило выдерживает не сильные удары.</li>								
+								<li>Может понизить тягу, если под пропеллером размещено слишком много крепёжных опор.</li>
+								</ul>
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Для чего нужен ESC?</b></span></summary>
+								ESC (англ. Electronic Speed Controller; рус. электронный контроллер скорости) — позволяет полётному контроллеру управлять скоростью и направлением вращения мотора. При правильном напряжении, ESC должен выдерживать макс. ток, который может потреблять мотор, а также ограничивать ток, проходящий через фазу при коммутации. Большинство ESC, применяемых в беспилотном хобби, позволяют мотору вращаться только в одном направлении, однако с правильной прошивкой они могут работать в обоих направлениях.
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Что такое режим полета?</b></span></summary>
+								«Режим полёта» — это способ, посредством которого полётный контроллер использует сенсоры и входящие радиокоманды для обеспечения стабилизации и полёта БПЛА. Если используемая аппаратура управления имеет пять и более каналов, пользователь может настроить программное обеспечение, что позволит ему изменять режимы через 5 канал (вспомогательным переключателем) непосредственно во время полёта.
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Какие есть самые популярные режимы полета?</b></span></summary>
+								<ul>
+								<li>ACRO — обычно режим по умолчанию, из всех имеющихся сенсоров, контроллером полёта задействуется только гироскоп (беспилотник не может автоматически выравниваться). Актуален для спортивного (акробатического) полёта.
+								</li>
+								<li>ANGLE — стабильный режим; из всех имеющихся сенсоров, контроллером полёта задействуются гироскоп и акселерометр. Углы ограничены. Будет удерживать беспилотник в горизонтальном положении (но без удержания позиции).
+								</li>
+								<li>HORIZON — сочетает в себе стабильность режима «ANGLE», когда стики находятся вблизи центра и перемещаются медленно, и акробатику режима «ACRO», когда стики находятся в крайних положениях и перемещаются быстро. Контроллером полёта задействуется только гироскоп.
+								</li>
+								<li>BARO (Altitude Hold) — стабильный режим; из всех имеющихся сенсоров, контроллером полёта задействуются гироскоп, акселерометр и барометр. Углы ограничены. Барометр используется для удержания определенной (фиксированной) высоты, когда с аппаратуры управления не подаются никакие команды.
+								</li>
+								<li>MAG (Heading Hold) — режим блокировки курса (направления компаса), беспилотник будет сохранять Yaw ориентацию. Из всех имеющихся сенсоров, контроллером полёта задействуются гироскоп, акселерометр и компас.
+								</li>
+
+								</ul>
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Что такое ПИД-регулятор?</b></span></summary>
+								Proportional Integral Derivate (PID) или Пропорционально-интегрально-дифференцирующий регулятор (ПИД) — часть программного обеспечения полётного контроллера, которое считывает данные с сенсоров и вычисляет, как быстро должны вращаться моторы, чтобы сохранить желаемую скорость перемещения БЛА.
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Что такое GUI?</b></span></summary>
+								Graphical User Interface (GUI) или Графический интерфейс пользователя — это то, что используется для визуального редактирования кода (при помощи компьютера), который будет загружен в полётный контроллер. Программное обеспечение, поставляемое с контроллерами полёта, продолжает становиться все лучше и лучше; первые контроллеры полёта использовали в основном текстовые интерфейсы, которые требовали, чтобы пользователи понимали почти весь код и меняли определенные разделы в соответствии с проектом. В последнее время в GUI применяются интерактивные графические интерфейсы, с целью облегчить пользователю настройку необходимых параметров.
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Какие есть дополнительные функции у контроллеров?</b></span></summary>
+								<ul>
+								<li>Автономная навигация по путевым точкам — позволяет пользователю устанавливать путевые GPS точки, по которым беспилотник будет следовать автономно.
+								</li>
+								<li>Oribiting — перемещение беспилотника вокруг заданной GPS-координаты, где передняя часть дрона всегда направлена в сторону заданной координаты (актуально для съёмки).
+								</li>
+								<li>Follow me — многие БЛА имеют функцию «Follow Me/Следуй за мной», которая может быть основана на спутниковом позиционировании (например, отслеживание GPS-координат смартфона, либо встроенного в аппаратуру управления модуля GPS).
+								</li>
+								<li>3D-изображение — большая часть 3D-изображений выполняется после полёта при помощи изображений и GPS данных, полученных во время полёта.
+								</li>
+								<li>Открытый код — программное обеспечение некоторых полётных контроллеров, не может быть изменено/настроено. Продукты с открытым исходным кодом, как правило, позволяют опытным пользователям изменять код в соответствии с их конкретными потребностями.
+								</li>
+								
+								</ul>
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Какие есть разъёмы для видеопередатчика?</b></span></summary>
+								Не все видеопередатчики имеют одинаковые разъёмы, поэтому важно знать, какой разъём установлен в выбранной камере, а также, посмотреть, возможно ли подключение и работа с выбранным видеопередатчиком. Самые популярные разъёмы — композитные, мини/микро USB и 0.1-дюймовые разъёмы (аналоговые). На рынке имеется ряд адаптеров/переходников, например: 0.1″ FPV Tx разъём — miniUSB для использования с камерой GoPro, что значительно упрощает использование таких продуктов.
+								<br><br>
+								Некоторые видеопередатчики также могут иметь аудиовход, тем не менее в большинстве случаев шум издаваемый силовой установкой будет заглушать любой звук, который вы надеетесь записать. Если вам нужен звук, обязательно расположите микрофон как можно дальше от моторов (потребуется немало испытаний, чтобы найти макс. оптимальное место) и выберите совместимый приёмник. 
+
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Какие smart устройства используются для отображения видео в реальном времени?</b></span></summary>
+								Смартфоны, планшеты или ноутбуки могут быть использованы для отображения видео в режиме реального времени. Их батареи являются встроенными, а сами устройства лёгкие. Сложность использования интеллектуальных устройств заключается в том, что большинство приёмников не предназначены для приёма видеосигнала от беспроводного видеоприёмника (один из двух проводной или беспроводной). Ноутбук или планшет с встроенной или USB-видеокартой может получать нормальное композитное видео. Смартфон в настоящее время лучше всего работает с видео, отправляемым по Wi-Fi (от Wi-Fi камеры к Wi-Fi адаптеру). Использование Wi-Fi видеосигнала GoPro и мобильного приложения является одним из самых простых способов реализации FPV, однако стоит отметить, что диапазон сигнала Wi-Fi камеры сильно ограничен (10-20 метров). Поскольку смартфоны широко распространены, а беспилотники — последний писк моды, производители регулярно выпускают новые продукты, из которых извлекают выгоду, поэтому, прежде чем принять решение, хорошенько подумайте.
+								</details>
+								
+								<br>
+								
+								<details>
+								<summary><span style="color: black; font-size: 24px"><b>Что включает в себя базовая станция?</b></span></summary>
+								<ul>
+								<li>Основную батарею, возможно, используемую для питания ЖК-монитора и/или FPV очков и, возможно, видеоприёмника.</li>
+								<li>Вспомогательную батарею для передатчика и/или видеоприёмника.</li>
+								<li>Крепление для ЖК-монитора и/или место для FPV очков.</li>
+								<li>Крепление для видеоприёмника.</li>
+								<li>Место для хранения аппаратуры управления.</li>
+								<li>Крепление для антенны большой дальности (или место для переносной направленной антенны)</li>
+								<li>Место для зарядного устройства для основного аккумулятора (ов).</li>
+								<li>Место для запасных частей для дрона (пропеллеры, моторы, аккумуляторы, элементы рамы).</li>
+								</ul>
+								</details>
+								
+</div>
+								<br data-v-99d969aa="">
+								<button data-v-99d969aa="" type="button" class="v-btn v-btn--contained v-btn--rounded theme--dark v-size--default" style="background-color: rgb(34, 56, 128); border-color: rgb(34, 56, 128); font-color: white;"><span class="v-btn__content"><a href="mailto:abit_ietn@susu.ru">Подать заявку</a></span></button>
+							</div>
+							<br data-v-621e45e3="">
+							<br data-v-621e45e3="">
+						</div>
+					</div>
+				</main><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUkAAACACAYAAACGGptgAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4QgWCwAFKPE6awAAAp1JREFUeNrt3TFOwmAcxuG3TcRFjYNGAkdxZPIA3oczGFZPY+JlPIED1AHQUlqFYLSB50k6QEJCPskv/y9tbRnoi4enq0xmVe6fLy0GfVFaAnpjXoySJIP3kcVAJKGpKsZJkmI+thiIJGxNkllOkEVMkogkbP8aV5PkeqIEkYSaRWWSRCSh01ccRRKRhG3Vepttu41IQssoaZJEJKHVdFomGX5GcvkaRBKSJC/Xt0kGq1dneb27sSiIJHzutMvNLXa1sOVGJOEriuXmyRrXSiKSUJ8kmydrKpMkIgndUVyYJBFJ6NxeL1wGhEhC93bbrYmIJNQnyeZdNk7cIJJQj2RzcjRJIpKQJHmcDlKkefH4bR6ezi0OIglvd6MkRePdIu/l0OIgklB23F3j5A0iCUn3NZFO3iCS8M3E6K4bRBKSlLbbiCR0q9q31f7JBSIJSWK7jUjCd8Z7vg8iiUlSJBFJjt9kVv14JBcdn77Y8fMgkgAiCSCSACIJIJIAIgkgkgCIJIBIAogkgEgCiCSASAKIJIBIAogkACIJIJIAIgkgkgAiSc/t8mCuv35IVx+/EyIJIJIAIgmASAKIJIBIAogkgEgCiCSASAKIJIBIAiCSACIJIJIAIgkgkgAiCSCSACIJIJL0lAdc+fsgkgAiCSCSACIJIJIAIgmASB6dtstOfvuwTqezTogkgEgCiCSASAKIJIBIAogkgEgCiCSASAIgkgAiCSCSACIJIJIAIgkgkgAiCSCSAIjkfjzzBL9HkQRAJAFEEkAkAUQSQCQBRBJAJAFEEuAUInnIVfundhyiT9+F/3HMv8cjPkySALbbACIJIJIAIgkgkgAiCSCSACIJIJIAiCSASAKIJIBIAogkgEgCiCSASAKIJMCJ+wDP3HslhnVYJgAAAABJRU5ErkJggg==" alt="" class="images">
+				<footer data-v-05c46f50="" class="v-footer v-sheet theme--dark v-footer--padless" data-booted="true">
+					<div data-v-05c46f50="" class="lighten-1 white--text text-center v-card v-card--flat v-sheet theme--dark rounded-0" style="width: 100%; background-color: rgb(0, 67, 148); border-color: rgb(0, 67, 148);">
+						<div data-v-05c46f50="" class="v-card__text space"> Как с нами связаться </div>
+						<div data-v-05c46f50="" class="v-card__text white--text pt-0 row-flex space text">
+							<div data-v-05c46f50="">Адрес: 454080,
+								<br data-v-05c46f50=""> <a href="https://goo.gl/maps/1gdqy6FKjjs8DwCe9">г. Челябинск, пр. Ленина, 76</a> 
+								<br data-v-05c46f50=""> Деканат: ауд. 702 главного корпуса
+								<br data-v-05c46f50=""> Группа Вконтакте для абитуриентов:
+								<br data-v-05c46f50=""> <a href="https://vk.com/abiturient_ietn">vk.com/abiturient_ietn</a> </div>
+							<div data-v-05c46f50="" class="vl"></div>
+							<div data-v-05c46f50="">Директор: Замышляева А.А.
+								<br data-v-05c46f50=""> Телефон: <a href="tel:+73512679115">+7 (351) 267-91-15</a>
+								<br data-v-05c46f50=""> Сайт: <a href="https://vk.com/abiturient_ietn">ietn.susu.ru</a>
+								<br data-v-05c46f50=""> Электронная почта:
+								<br data-v-05c46f50=""> <a href="mailto:abit_ietn@susu.ru ">abit_ietn@susu.ru </a></div>
+						</div>
+						<hr data-v-05c46f50="" role="separator" aria-orientation="horizontal" class="v-divider theme--dark">
+						<div data-v-05c46f50="" class="v-card__text white--text"> 2021 — <strong data-v-05c46f50="">School Dron</strong></div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
